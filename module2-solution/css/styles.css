@@ -1,0 +1,87 @@
+/********** Base styles **********/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Arial", "Helvetica", "sans-serif";
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin-bottom: 15px;
+    font-size: 1.75em;
+}
+
+p {
+  padding-top: 15px;
+}
+
+
+/* Simple Responsive Framework. */
+
+.container {
+	position: relative;
+	border: solid black 1px;
+	background-color: gray;
+}
+
+#title1, #title2, #title3 {
+	font-size: 1.25em;
+	margin-bottom: 15px;
+	border: solid black 1px;
+	margin: 0;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+#title1 {
+	background-color: #FE2EF7;
+}
+
+#title2 {
+	background-color: #04B431;
+}
+
+#title3 {
+	background-color: #D7DF01;
+}
+/********** Large devices only **********/
+@media (min-width: 992px) {
+    .col-lg-4 {
+    	padding: 8px;
+    	float: left;
+    	margin: 0;
+        width: 33%;
+    }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+    .col-md-6 {
+    	float: left;
+    	padding: 8px;
+    	margin: 0;
+        width: 50%;
+    }
+    .col-md-12 {
+    	float: left;
+    	padding: 8px;
+    	margin: 0;
+        width: 100%;
+    }
+}
+
+
+/********** Small devices only **********/
+@media (max-width: 767px) {
+	.col-sm-12 {
+		float: left;
+		padding: 8px;
+		margin: 0;
+        width: 100%
+    }
+}
